@@ -7,12 +7,12 @@
   },
   "configurePresets": [
       {
-        "name": "QPC_CM0_GCC_Demo",
-        "displayName": "QPC_CM0_GCC_Demo",
-        "description": "Blinky STM32F072RB Discovery board demo",
+        "name": "QPC_CM4F_GCC_Demo",
+        "displayName": "QPC_CM4F_GCC_Demo",
+        "description": "Blinky Nucleo STM32G431 board demo",
         "generator": "Ninja",
         "environment": {
-            "CORTEX_TYPE": "cm0"
+            "CORTEX_TYPE": "cm4f"
         },
         "binaryDir": "${sourceDir}/build/${presetName}",
         "cacheVariables": {
@@ -26,8 +26,8 @@
   ],
   "buildPresets": [
       {
-          "name": "QPC_CM0_GCC_Demo",
-          "configurePreset": "QPC_CM0_GCC_Demo"
+          "name": "QPC_CM4F_GCC_Demo",
+          "configurePreset": "QPC_CM4F_GCC_Demo"
       }
   ]
 }
